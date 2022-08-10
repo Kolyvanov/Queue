@@ -10,14 +10,23 @@ public class Person {
     }
 
     public boolean minusTicket() {
-        if (countTicket > 1) {
+        if (countTicket > 0) {
             countTicket--;
             return true;
-        } else if (countTicket == 1) {
-            countTicket--;
-            return false;
         } else {
             return false;
         }
+    }
+
+    public int getCountTicket() {
+        return countTicket;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
     }
 }
